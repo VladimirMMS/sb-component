@@ -4,7 +4,7 @@
   "private": false,
   "license": "MIT",
   "typings": "dist/index.d.ts",
-  "main": "dist.index.js",
+  "main": "dist/index.js",
   "homepage": "https://vladimir-mercado.com",
   "repository": {
     "url": "https://github.com/VladimirMMS/sb-component",
