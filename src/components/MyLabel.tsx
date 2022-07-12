@@ -19,12 +19,14 @@ export interface Props {
     color: 'primary' | 'secondary' | 'tertiary'
 
     fontColor?: string;
+
+    backgroundColor?: string;
 }
 
 
-export default function MyLabel({ label = 'No Label', size = 'normal', allCaps, color, fontColor }: Props) {
+export default function MyLabel({ label = 'No Label', size = 'normal', allCaps, color, fontColor, backgroundColor='transparent' }: Props) {
     return (
-        <span className={`${ size } ${'text-'+color}`} style={{color: fontColor}}>
+        <span className={`${ size } ${'text-'+color}`} style={{color: fontColor, backgroundColor}}>
             {allCaps ? label.toUpperCase():label}
         </span>
     )
